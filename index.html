@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="view-switch">
+        <button id="mobile-view-btn">Mobile View</button>
+        <button id="pc-view-btn">PC View</button>
+    </div>
+    <div class="todo-container">
+        <header>
+            <h1>Padhai</h1>
+        </header>
+
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Kya Padhega?">
+            <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-btn">Add Task</button>
+        </div>
+
+        <div id="filter">
+            <button id="filter-all" class="filter-btn">All</button>
+            <button id="filter-active" class="filter-btn">Active</button>
+            <button id="filter-completed" class="filter-btn">Completed</button>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <div id="clear-completed">
+            <button id="clear-completed-btn">Clear Completed</button>
+            <button id="clear-all-btn">Clear All</button>
+        </div>
+
+        <div id="remaining-tasks">Remaining tasks: <span id="task-count">0</span></div>
+
+        <div id="undo-popup" class="undo-popup">
+            <span id="undo-message"></span>
+            <button id="undo-button">Undo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
